@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    background-color: rgb(124, 81, 25);
+}
+
+/* Les front du Jeu*/
+.contour{
+    position: absolute;
+    top: 30px;
+    border-radius: 10px;
+    left: 300px;
+    border: 20px solid rgb(0, 0, 0);
+    width: 800px;
+    height: 550px;
+    background: rgb(66, 38, 0);
+    box-shadow: 5px 5px 5px;
+}
+
+/* diagonal 1*/
+.diago1{
+    position: absolute;
+    top: -215px;
+    left: 390px;
+    background: rgb(0, 0, 0);
+    width: 20px;
+    height: 980px;
+    transform: rotate(-56deg);
+}
+
+/*diagonal 2 */
+.diago2{
+    position: absolute;
+    top: -215px;
+    left: 390px;
+    background: rgb(0, 0, 0);
+    width: 20px;
+    height: 980px;
+    transform: rotate(+56deg);
+}
+
+/*Ligne Horizontale*/
+.hori{
+    position: absolute;
+    top: 265px;
+    width: 800px;
+    height: 20px;
+    background: rgb(0, 0, 0);
+}
+
+/*Ligne Verticale*/
+.verti{
+    position: absolute;
+    left: 390px;
+    background: rgb(0, 0, 0);
+    width: 20px;
+    height: 550px;
+}
+#pe{
+    opacity: 0;
+}
+.invisible{
+    font-size: 0;
+    color: transparent;
+}
+/* Css du div Haut*/
+.haut{
+    position: absolute;
+    top: 30px;
+    border-radius: 10px;
+    left: 300px;
+
+    width: 835px;
+    height: 585px;
+}
+#cage{
+    padding: 0;
+    width: 100px;
+    height: 50px;
+    
+}
+
+.div-rouge{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    transition: top 0.5s, left 0.5s;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px;
+}
+.div-rouge:hover{
+    border: 3px solid rgb(0, 183, 255);
+}
+.div-bleu{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(25, 0, 255);
+    position: absolute;
+    transition: top 0.5s, left 0.5s;
+    border-radius: 50px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px;
+}
+.div-bleu:hover{
+    border: 3px solid rgb(255, 51, 0);
+}
+.player1{
+    top: 0;
+    left: 0;
+}
+.player2{
+    left: 390px;
+    top: 0;
+}
+.player3{
+    left: 790px;
+    top: 0px;
+}
+
+.player11{
+    top: 530px;
+    left: 0;
+}
+.player22{
+    left: 390px;
+    top: 530px;
+}
+.player33{
+    left: 790px;
+    top: 530px;
+}
+.num1{
+    position: absolute;
+    opacity: 0;
+    left: -50px;
+    top: -10px;
+}
+.num2{
+    position: absolute;
+    opacity: 0;
+    left: 360px;
+    top: -10px;
+}
+.num3{
+    position: absolute;
+    opacity: 0;
+    left: 770px;
+    top: -10px;
+}
+.num4{
+    position: absolute;
+    opacity: 0;
+    left: -50px;
+    top: 260px;
+}
+.num5{
+    position: absolute;
+    opacity: 0;
+    left: 360px;
+    top: 260px;
+}
+.num6{
+    position: absolute;
+    opacity: 0;
+    left: 770px;
+    top: 260px;
+}
+.num7{
+    position: absolute;
+    opacity: 0;
+    top: 530px;
+    left: -50px;
+}
+.num8{
+    position: absolute;
+    opacity: 0;
+    left: 360px;
+    top: 530px;
+}
+.num9{
+    position: absolute;
+    opacity: 0;
+    left: 770px;
+    top: 530px;
+}
+.win{
+    position: absolute;
+    top: 5rem;
+    padding-top: 10rem;
+    text-align: center;
+    width: 100%;
+    height: 20rem;
+    background: lightblue;
+    opacity: 0.8;
+    transition: 1s;
+    visibility: hidden;
+}
+.win h1{
+    color: blue;
+    font-size: 60px;
+}
+.win button{
+    padding: 5px;
+    width: 250px;
+    border-radius:5px;
+    color: white;
+    font-size: 30px;
+    background-color: blue;
+}
+.tourRouge{
+    position: relative;
+    text-align: center;
+    top: 130px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    transition: top 0.5s, left 0.5s;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px;
+    color: white;
+}
+.tourRouge:hover{
+    border: 3px solid blue;
+}
+.tourBleu{
+    position: relative;
+    top: 200px;
+    text-align: center;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(25, 0, 255);
+    position: absolute;
+    transition: top 0.5s, left 0.5s;
+    border-radius: 50px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px;
+    color: white;
+}
+.tourBleu:hover{
+    border: 3px solid red;
+}
+h3{
+    border-radius: 3px;
+    margin-top: 100px;
+    padding-left: 10px;
+    width: 230px;
+    background: rgb(36, 33, 33);
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+}
