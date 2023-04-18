@@ -1,11 +1,11 @@
 # GasyGame
--Nom:
+Nom:
 ANDRITIANA FANORENANTSOA
--Prenom:
+,Prenom:
 Steddi Karen
-Classe:
+,Classe:
 IGGLIA3A
-Numero: 
+,Numero: 
 56
-Lien projet:
+,Lien projet:
 https://steddik.github.io/GG/
